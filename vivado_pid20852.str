@@ -176,3 +176,51 @@ selectCodeEditor("ball.v", 322, 91); // ac (ball.v)
 closeMainWindow("ec311project - [X:/ec311project/ec311project.xpr] - Vivado 2024.1"); // F (MainFrame)
 // Run Command: PAResourceCommand.PACommandNames_EXIT
 dismissDialog("Exit Vivado"); // t (dialog0)
+// Elapsed time: 384 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ball_position (ball_position.v)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ball_position (ball_position.v)]", 8, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("ball_position.v", 0, 5); // ac (ball_position.v)
+selectCodeEditor("ball_position.v", 145, 74); // ac (ball_position.v)
+selectCodeEditor("ball_position.v", 0, 10); // ac (ball_position.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ball.v]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ball.v]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("ball.v", 141, 11); // ac (ball.v)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ah (PAResourceItoN.MainMenuMgr_VIEW, View)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ah (PAResourceItoN.MainMenuMgr_VIEW, View)
+selectCodeEditor("ball.v", 50, 33); // ac (ball.v)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ah (PAResourceItoN.MainMenuMgr_VIEW, View)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // ah (PAResourceItoN.MainMenuMgr_VIEW, View)
+selectCodeEditor("ball.v", 134, 16); // ac (ball.v)
+selectCodeEditor("ball.v", 148, 13); // ac (ball.v)
+typeControlKey((HResource) null, "ball.v", 'v'); // ac (ball.v)
+selectCodeEditor("ball.v", 373, 3); // ac (ball.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ball_position (ball_position.v)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ball_position (ball_position.v)]", 8, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("ball_position.v", 190, 9); // ac (ball_position.v)
+typeControlKey((HResource) null, "ball_position.v", 'c'); // ac (ball_position.v)
+typeControlKey((HResource) null, "ball_position.v", 'c'); // ac (ball_position.v)
+typeControlKey((HResource) null, "ball_position.v", 'v'); // ac (ball_position.v)
+selectCodeEditor("ball_position.v", 146, 22); // ac (ball_position.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ball.v]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ball.v]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("ball.v", 192, 14); // ac (ball.v)
+typeControlKey((HResource) null, "ball.v", 'v'); // ac (ball.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ball_collision.v]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, ball_collision.v]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("ball_collision.v", 103, 13); // ac (ball_collision.v)
+// [GUI Memory]: 154 MB (+2455kb) [00:09:06]
+typeControlKey((HResource) null, "ball_collision.v", 'v'); // ac (ball_collision.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, display.v]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, display.v]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("display.v", 182, 14, false, true, false, false, false); // ac (display.v) - Control Key
+typeControlKey((HResource) null, "display.v", 'v'); // ac (display.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, paddle.v]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, paddle.v]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("paddle.v", 162, 3); // ac (paddle.v)
+typeControlKey((HResource) null, "paddle.v", 'v'); // ac (paddle.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, score.v]", 6, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, score.v]", 6, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("score.v", 199, 18); // ac (score.v)
+typeControlKey((HResource) null, "score.v", 'v'); // ac (score.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, user_input.v]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)

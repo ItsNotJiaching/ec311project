@@ -5,10 +5,11 @@ module ball(
   input wire [9:0] screen_width,
   input wire [9:0] screen_height,
   output reg [9:0] ball_x,
-  output reg [9:0] ball_y
+  output reg [9:0] ball_y,
+  output reg [9:0] velocity_x,
+  output reg [9:0] velocity_y
 );
-  reg [9:0] velocity_x;
-  reg [9:0] velocity_y;
+
   initial begin 
     ball_x = screen_width/2;
     ball_y = screen_height/2;
