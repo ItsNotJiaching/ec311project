@@ -1,16 +1,19 @@
 module score_tb();
   
 reg collision_flag1, collision_flag2;
-wire p_one_score, p_two_score;
+wire [2:0] p_one_score, p_two_score;
+wire reset1, reset2;
   
-  score s1(collision_flag1, collision_flag2, p_one_score, p_two_score);  
+score s1(collision_flag1, collision_flag2, reset1, reset2, p_one_score, p_two_score);  
   
 initial begin
   collision_flag1 = 1;
   collision_flag2 = 0;
-  #10 collision_flag1 = 1;
+  #10 collision_flag1 = 0;
   #20 collision_flag2 = 1;
   #40 collision_flag1 = 1;
-  #50 $finish;
+  #50 collision_flag1 = 0;
+  #60 collision_flag1 = 1;
+  #100 $finish;
 end
 endmodule
