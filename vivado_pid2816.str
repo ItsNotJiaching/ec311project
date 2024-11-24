@@ -313,3 +313,109 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "score.v
 // TclEventType: FILE_SET_CHANGE
 // Elapsed Time for: 'L.f': 14m:02s
 // Elapsed Time for: 'L.f': 14m:04s
+// Elapsed time: 168 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ball_tb.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "score.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ball_tb.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "score.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ball_tb.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ball.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ball_tb.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ball.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "score.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ball_tb.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 221 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ball.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("ball.v", 215, 80); // ac (ball.v)
+selectCodeEditor("ball.v", 224, 97); // ac (ball.v)
+selectCodeEditor("ball.v", 113, 76); // ac (ball.v)
+selectCodeEditor("ball.v", 234, 95); // ac (ball.v)
+selectCodeEditor("ball.v", 152, 77); // ac (ball.v)
+selectCodeEditor("ball.v", 162, 78); // ac (ball.v)
+selectCodeEditor("ball.v", 218, 76); // ac (ball.v)
+// Elapsed time: 19 seconds
+selectCodeEditor("ball.v", 143, 121); // ac (ball.v)
+selectCodeEditor("ball.v", 145, 84); // ac (ball.v)
+selectCodeEditor("ball.v", 216, 74); // ac (ball.v)
+selectCodeEditor("ball.v", 126, 79); // ac (ball.v)
+selectCodeEditor("ball.v", 156, 138); // ac (ball.v)
+selectCodeEditor("ball.v", 177, 215); // ac (ball.v)
+selectCodeEditor("ball.v", 184, 259); // ac (ball.v)
+selectCodeEditor("ball.v", 196, 290); // ac (ball.v)
+selectCodeEditor("ball.v", 171, 267); // ac (ball.v)
+selectCodeEditor("ball.v", 172, 272); // ac (ball.v)
+selectCodeEditor("ball.v", 174, 259); // ac (ball.v)
+selectCodeEditor("ball.v", 170, 250); // ac (ball.v)
+selectCodeEditor("ball.v", 206, 143); // ac (ball.v)
+selectCodeEditor("ball.v", 208, 83); // ac (ball.v)
+selectCodeEditor("ball.v", 223, 74); // ac (ball.v)
+selectCodeEditor("ball.v", 216, 77); // ac (ball.v)
+selectCodeEditor("ball.v", 222, 101); // ac (ball.v)
+selectCodeEditor("ball.v", 212, 77); // ac (ball.v)
+selectCodeEditor("ball.v", 224, 97); // ac (ball.v)
+// Elapsed time: 21 seconds
+selectCodeEditor("ball.v", 171, 250); // ac (ball.v)
+// Elapsed time: 20 seconds
+selectCodeEditor("ball.v", 52, 229); // ac (ball.v)
+// Elapsed time: 29 seconds
+selectCodeEditor("ball.v", 231, 233); // ac (ball.v)
+typeControlKey((HResource) null, "ball.v", 'c'); // ac (ball.v)
+selectCodeEditor("ball.v", 260, 260); // ac (ball.v)
+selectCodeEditor("ball.v", 2, 244); // ac (ball.v)
+typeControlKey((HResource) null, "ball.v", 'v'); // ac (ball.v)
+selectCodeEditor("ball.v", 218, 247); // ac (ball.v)
+selectCodeEditor("ball.v", 221, 246, false, false, false, false, true); // ac (ball.v) - Double Click
+selectCodeEditor("ball.v", 678, 194); // ac (ball.v)
+// Elapsed time: 33 seconds
+selectCodeEditor("ball.v", 223, 251); // ac (ball.v)
+selectCodeEditor("ball.v", 225, 234); // ac (ball.v)
+// Elapsed time: 20 seconds
+selectCodeEditor("ball.v", 244, 95); // ac (ball.v)
+selectCodeEditor("ball.v", 473, 236); // ac (ball.v)
+selectCodeEditor("ball.v", 365, 211); // ac (ball.v)
+selectCodeEditor("ball.v", 226, 212); // ac (ball.v)
+selectCodeEditor("ball.v", 229, 213); // ac (ball.v)
+selectCodeEditor("ball.v", 225, 190); // ac (ball.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 24m:40s
+selectCodeEditor("ball.v", 345, 228); // ac (ball.v)
+selectCodeEditor("ball.v", 306, 126); // ac (ball.v)
+selectCodeEditor("ball.v", 277, 28); // ac (ball.v)
+selectCodeEditor("ball.v", 285, 40); // ac (ball.v)
+// Elapsed Time for: 'L.f': 24m:42s
+selectCodeEditor("ball.v", 291, 57); // ac (ball.v)
+selectCodeEditor("ball.v", 293, 73); // ac (ball.v)
+selectCodeEditor("ball.v", 299, 103); // ac (ball.v)
+selectCodeEditor("ball.v", 300, 125); // ac (ball.v)
+selectCodeEditor("ball.v", 300, 140); // ac (ball.v)
+selectCodeEditor("ball.v", 300, 160); // ac (ball.v)
+selectCodeEditor("ball.v", 299, 138); // ac (ball.v)
+selectCodeEditor("ball.v", 297, 116); // ac (ball.v)
+selectCodeEditor("ball.v", 297, 102); // ac (ball.v)
+selectCodeEditor("ball.v", 297, 87); // ac (ball.v)
+selectCodeEditor("ball.v", 297, 80); // ac (ball.v)
+selectCodeEditor("ball.v", 299, 106); // ac (ball.v)
+selectCodeEditor("ball.v", 286, 220); // ac (ball.v)
+selectCodeEditor("ball.v", 178, 215); // ac (ball.v)
+selectCodeEditor("ball.v", 180, 212); // ac (ball.v)
+// Elapsed time: 32 seconds
+selectCodeEditor("ball.v", 370, 230); // ac (ball.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("ball.v", 651, 255); // ac (ball.v)
+// Elapsed Time for: 'L.f': 25m:32s
+// Elapsed Time for: 'L.f': 25m:34s
+selectCodeEditor("ball.v", 281, 91); // ac (ball.v)
+selectCodeEditor("ball.v", 274, 79); // ac (ball.v)
+selectCodeEditor("ball.v", 274, 88); // ac (ball.v)
+selectCodeEditor("ball.v", 274, 77); // ac (ball.v)
+selectCodeEditor("ball.v", 276, 91); // ac (ball.v)
+selectCodeEditor("ball.v", 275, 76); // ac (ball.v)
+selectCodeEditor("ball.v", 275, 84); // ac (ball.v)
+selectCodeEditor("ball.v", 275, 77); // ac (ball.v)
+selectCodeEditor("ball.v", 275, 85); // ac (ball.v)
+selectCodeEditor("ball.v", 274, 77); // ac (ball.v)
+selectCodeEditor("ball.v", 274, 88); // ac (ball.v)
+selectCodeEditor("ball.v", 345, 314); // ac (ball.v)

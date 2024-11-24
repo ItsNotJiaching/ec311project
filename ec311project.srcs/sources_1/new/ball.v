@@ -2,8 +2,6 @@
 module ball(
   input wire clk,
   input wire reset,
-  input wire [9:0] screen_width,
-  input wire [9:0] screen_height,
   input wire [9:0] velocity_x,
   input wire [9:0] velocity_y,
   output reg [9:0] ball_x,
@@ -11,7 +9,8 @@ module ball(
   output reg edgeflag_left,
   output reg edgeflag_right
 );
-
+    parameter screen_width = 640;
+    parameter screen_height = 480;    
   initial begin 
     ball_x = screen_width/2;
     ball_y = screen_height/2;
