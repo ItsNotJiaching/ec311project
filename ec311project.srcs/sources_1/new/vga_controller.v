@@ -107,42 +107,42 @@ module vga_controller(clk, h_sync, v_sync, led_on);
         direction = 0;
     end
     
-    wire drawC, drawA, drawB;
-    circle C(25, Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawC);
-    paddle A(Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawA);
-    paddle B(Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawB);
+    wire drawPuck, drawPaddleA, drawPaddleB;
+    rectangle puck(25, 25, Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPuck);
+    rectangle padA(55, 15, Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleA);
+    rectangle padB(55, 15, Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleB);
     
-    
-    always@(posedge  v_sync)
-    begin
-            if(direction[0] == 0) begin
-              if(Cx < ACTIVE_WIDTH - 1) begin
-                    Cx <= Cx + 1;
-                end else begin
-                    direction[0] <= 1;
-                end
-            end else if(direction[0] == 1) begin
-              if(Cx > 1) begin
-                    Cx <= Cx - 1;
-                end else begin
-                    direction[0] <= 0;
-                end
-            end 
+    // SCANNING TEST CODE
+//    always@(posedge  v_sync)
+//    begin
+//            if(direction[0] == 0) begin
+//              if(Cx < ACTIVE_WIDTH - 1) begin
+//                    Cx <= Cx + 1;
+//                end else begin
+//                    direction[0] <= 1;
+//                end
+//            end else if(direction[0] == 1) begin
+//              if(Cx > 1) begin
+//                    Cx <= Cx - 1;
+//                end else begin
+//                    direction[0] <= 0;
+//                end
+//            end 
 
-            if(direction[1] == 0) begin
-              if(Cy < ACTIVE_HEIGHT - 1) begin
-                    Cy <= Cy + 1;
-                end else begin
-                    direction[1] <= 1;
-                end
-            end else if(direction[1] == 1) begin
-              if(Cy > 1) begin
-                    Cy <= Cy - 1;
-                end else begin
-                    direction[1] <= 0;
-                end
-            end 
-    end
+//            if(direction[1] == 0) begin
+//              if(Cy < ACTIVE_HEIGHT - 1) begin
+//                    Cy <= Cy + 1;
+//                end else begin
+//                    direction[1] <= 1;
+//                end
+//            end else if(direction[1] == 1) begin
+//              if(Cy > 1) begin
+//                    Cy <= Cy - 1;
+//                end else begin
+//                    direction[1] <= 0;
+//                end
+//            end 
+//    end
     
     always@(posedge clk)
     begin
@@ -157,7 +157,7 @@ module vga_controller(clk, h_sync, v_sync, led_on);
 //        else
 //        begin
 //            led_on <= 1'b0;
-            led_on <= (drawA == 1) ? 3'b100 : 3'b000;
+            led_on <= drawPaddleA | drawPaddleB | drawPuck;
             
 
             
