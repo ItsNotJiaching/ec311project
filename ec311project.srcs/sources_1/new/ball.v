@@ -28,6 +28,8 @@ module ball(
       if ( ball_x <= 0 || ball_x >= screen_width -1 )begin
         ball_x <= screen_width/2;
         ball_y <= screen_height/2;
+        edgeflag_left <= 1; 
+        edgeflag_right <= 1;
         // reminder you need to reset other things??? (reset score, reset position)
       end 
     end 
