@@ -2,9 +2,9 @@ module score_tb();
   
 reg collision_flag1, collision_flag2;
 wire [2:0] p_one_score, p_two_score;
-wire reset1, reset2;
+wire reset;
   
-score s1(collision_flag1, collision_flag2, reset1, reset2, p_one_score, p_two_score);  
+score s1(collision_flag1, collision_flag2, reset, p_one_score, p_two_score);  
   
 initial begin
   collision_flag1 = 1;
