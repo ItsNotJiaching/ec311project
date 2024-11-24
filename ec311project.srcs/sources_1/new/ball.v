@@ -9,31 +9,33 @@ module ball(
   output reg edgeflag_left,
   output reg edgeflag_right
 );
-    
+// locally declearing the width and height of the screen.    
    parameter screen_width = 640;
    parameter screen_height = 480;
   initial begin 
     ball_x = screen_width/2;
     ball_y = screen_height/2;
-    edgeflag_left = 0;
+    edgeflag_left = 0; // at the beginning assuming that edgeflag left or right is at logic 0 because ball at center.
     edgeflag_right = 0;
 
   end
  always @ (posedge clk or posedge resetflag) begin
+   // when the resetflag is at logic one from the score module, we set reset the ball position to the center.
     if (resetflag) begin 
       ball_x <= screen_width/2;
       ball_y <= screen_height/2;
       edgeflag_left <= 0;
       edgeflag_right <= 0;     // reset velocity at top level module 
     end else begin 
+      // if reet is not true, we capture and update the ball location.
       ball_x <= ball_x + velocity_x;
       ball_y <= ball_y + velocity_y;
       end 
+   // checking if the collision happened on the left or the right.
       if ( ball_x <= 0 )begin
         ball_x <= screen_width/2;
         ball_y <= screen_height/2; 
         edgeflag_left <= 1;
-        // reminder you need to reset other things??? (reset score, reset position)
       end else begin 
       if (ball_x >= screen_width -1) begin 
         ball_x <= screen_width/2;
