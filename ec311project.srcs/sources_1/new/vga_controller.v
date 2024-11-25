@@ -20,9 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module vga_controller(clk, h_sync, v_sync, led_on);
+module vga_controller(clk, h_sync, v_sync, ball_pos_x, ball_pos_y, led_on);
     
     input clk;
+    
+    input[9:0] ball_pos_x, ball_pos_y;
 //    input [15:0] x_buf;
 //    input [15:0] y_buf;
     output reg h_sync, v_sync;
@@ -38,8 +40,8 @@ module vga_controller(clk, h_sync, v_sync, led_on);
     localparam W_SHIFT = 50;
     localparam H_SHIFT = 33;
     
-    reg [11:0] widthPos = 0;
-    reg [11:0] heightPos = 0;
+    reg [9:0] widthPos = 0;
+    reg [9:0] heightPos = 0;
     
     
     wire enable = ((widthPos >=50 & widthPos < 690) & (heightPos >=33 & heightPos < 513)) ? 1'b1: 1'b0;
@@ -98,8 +100,8 @@ module vga_controller(clk, h_sync, v_sync, led_on);
     // this is you main logic based on 
     // your project
     
-    reg [11:0] Cx;
-    reg [11:0] Cy;
+    reg [9:0] Cx;
+    reg [9:0] Cy;
     reg [1:0] direction;
     initial begin
         Cx = 0;
@@ -108,9 +110,9 @@ module vga_controller(clk, h_sync, v_sync, led_on);
     end
     
     wire drawPuck, drawPaddleA, drawPaddleB;
-    rectangle puck(25, 25, Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPuck);
-    rectangle padA(55, 15, Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleA);
-    rectangle padB(55, 15, Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleB);
+    rectangle puck(5, 5, ball_pos_x, ball_pos_y, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPuck);
+//    rectangle padA(55, 15, Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleA);
+//    rectangle padB(55, 15, Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleB);
     
     // SCANNING TEST CODE
 //    always@(posedge  v_sync)
@@ -157,7 +159,7 @@ module vga_controller(clk, h_sync, v_sync, led_on);
 //        else
 //        begin
 //            led_on <= 1'b0;
-            led_on <= drawPaddleA | drawPaddleB | drawPuck;
+            led_on <= drawPuck ? 3'b010 : 3'b000;
             
 
             
