@@ -29,11 +29,11 @@ initial begin
     velocity_y = 2;
 end
 
-  always @ (posedge clk or posedge reset) begin
+  always @ (posedge clk) begin
     if (reset) begin
       is_colliding = 0;
-      velocity_x = 0;
-      velocity_y = 0;
+      velocity_x = 2;
+      velocity_y = 2;
     end
     
     distBallPaddle1_y = paddle1_y - ball_y;

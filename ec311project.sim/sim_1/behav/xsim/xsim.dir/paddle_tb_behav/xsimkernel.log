@@ -1,7 +1,0 @@
-Running: xsim.dir/paddle_tb_behav/xsimk.exe -simmode gui -wdb paddle_tb_behav.wdb -simrunnum 0 -socket 56557
-Design successfully loaded
-Design Loading Memory Usage: 8524 KB (Peak: 8524 KB)
-Design Loading CPU Usage: 93 ms
-Simulation completed
-Simulation Memory Usage: 9112 KB (Peak: 9112 KB)
-Simulation CPU Usage: 109 ms

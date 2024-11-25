@@ -2,8 +2,8 @@
 module ball(
   input wire clk,
   input wire resetflag,
-  input wire [9:0] velocity_x,
-  input wire [9:0] velocity_y,
+  input wire [5:0] velocity_x,
+  input wire [5:0] velocity_y,
   output reg [9:0] ball_x,
   output reg [9:0] ball_y,
   output reg edgeflag_left,
@@ -19,7 +19,7 @@ module ball(
     edgeflag_right = 0;
 
   end
- always @ (posedge clk or posedge resetflag) begin
+ always @ (posedge clk) begin
    // when the resetflag is at logic one from the score module, we set reset the ball position to the center.
     if (resetflag) begin 
       ball_x <= screen_width/2;

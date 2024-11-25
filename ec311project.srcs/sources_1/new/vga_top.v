@@ -20,27 +20,32 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module vga_top(clk, reset, vga_r, vga_g, vga_b, h_sync, v_sync);
+module vga_top(clk, rst, vga_r, vga_g, vga_b, h_sync, v_sync, upL, downL, upR, downR);
 
-    input clk, reset;
-
+    input clk, rst;
+    input upL, downL, upR, downR;
     output reg [3:0] vga_r, vga_g, vga_b;
     output h_sync, v_sync;
     wire newClk, newClk2;
     wire [2:0] ledOn;
     wire [9:0] ball_pos_x, ball_pos_y;
     wire edgeleft, edgeright;
-    
+    wire [9:0] padLY, padyRY;
+    wire [4:0] ball_vx, ball_vy;
   
     
-    clk_divider clkDiv (clk, reset, newClk);
-    game_clock_divider clkDiv2 (clk, reset, newClk2);
+    clk_divider clkDiv (clk, rst, newClk);
+    game_clock_divider clkDiv2 (clk, rst, newClk2);
     
     
-    ball puck(newClk2, reset, 1, 0, ball_pos_x, ball_pos_y, edgeleft, edgeright);
+    ball puck(newClk2, rst, ball_vx, ball_vy, ball_pos_x, ball_pos_y, edgeleft, edgeright);
+    ball_collision physics(newClk2, rst, padLY, padRY, ball_pos_x, ball_pos_y, 9, ball_vx, ball_vy);
+    
+    paddle padL(upL, downL, newClk2, rst, padLY);
+    paddle padR(upR, downR, newClk2, rst, padRY);
     
     
-    vga_controller vga_con (newClk, h_sync, v_sync, ball_pos_x, ball_pos_y, ledOn);
+    vga_controller vga_con (newClk, h_sync, v_sync, ball_pos_x, ball_pos_y, padLY, padRY, ledOn);
     
     
     initial begin

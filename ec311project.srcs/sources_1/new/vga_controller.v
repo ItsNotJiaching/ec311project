@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module vga_controller(clk, h_sync, v_sync, ball_pos_x, ball_pos_y, led_on);
+module vga_controller(clk, h_sync, v_sync, ball_pos_x, ball_pos_y, pad_l_y, pad_r_y, led_on);
     
     input clk;
     
-    input[9:0] ball_pos_x, ball_pos_y;
+    input[9:0] ball_pos_x, ball_pos_y, pad_l_y, pad_r_y;
 //    input [15:0] x_buf;
 //    input [15:0] y_buf;
     output reg h_sync, v_sync;
@@ -110,9 +110,9 @@ module vga_controller(clk, h_sync, v_sync, ball_pos_x, ball_pos_y, led_on);
     end
     
     wire drawPuck, drawPaddleA, drawPaddleB;
-    rectangle puck(5, 5, ball_pos_x, ball_pos_y, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPuck);
-//    rectangle padA(55, 15, Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleA);
-//    rectangle padB(55, 15, Cx, Cy, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleB);
+    rectangle puck(7, 8, ball_pos_x, ball_pos_y, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPuck);
+    rectangle padA(55, 13, 40, pad_l_y, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleA);
+    rectangle padB(55, 15, ACTIVE_WIDTH - 40, pad_r_y, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleB);
     
     // SCANNING TEST CODE
 //    always@(posedge  v_sync)
@@ -159,7 +159,7 @@ module vga_controller(clk, h_sync, v_sync, ball_pos_x, ball_pos_y, led_on);
 //        else
 //        begin
 //            led_on <= 1'b0;
-            led_on <= drawPuck ? 3'b010 : 3'b000;
+            led_on <= (drawPuck || drawPaddleA || drawPaddleB) ? 3'b100 : 3'b000;
             
 
             
