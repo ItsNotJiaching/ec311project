@@ -1,4 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "X:/ec311-wang/ec311project/ec311project.srcs/sources_1/new/ball_collision.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ball_collision
-INFO: [VRFC 10-2263] Analyzing Verilog file "X:/ec311-wang/ec311project/ec311project.srcs/sim_1/new/ball_collision_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ball_collision_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/ec311-wang/ec311project/ec311project.srcs/sources_1/new/paddle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module paddle
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/ec311-wang/ec311project/ec311project.srcs/sim_1/new/paddle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module paddle_tb
