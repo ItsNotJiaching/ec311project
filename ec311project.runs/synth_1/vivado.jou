@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Dec  2 22:47:17 2024
-# Process ID: 14968
+# Start of session at: Tue Dec  3 13:15:01 2024
+# Process ID: 4896
 # Current directory: C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/synth_1
 # Command line: vivado.exe -log vga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_top.tcl
 # Log file: C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/synth_1/vga_top.vds
@@ -19,6 +19,6 @@
 # Host memory       :16853 MB
 # Swap memory       :8321 MB
 # Total Virtual     :25174 MB
-# Available Virtual :6826 MB
+# Available Virtual :12401 MB
 #-----------------------------------------------------------
 source vga_top.tcl -notrace

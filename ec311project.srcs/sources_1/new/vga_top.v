@@ -20,13 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module vga_top(clk, rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_swt, R_swt);
-
+module vga_top(clk, rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_swt, R_swt, LED_out, Anode_Activate);
+    
+    // Score Controller Outputs
+    wire resetflag;
+    output wire [6:0] LED_out;
+    output wire [3:0] Anode_Activate;
+    
     input clk, rst;
     input L_swt, R_swt;
     output reg [3:0] vga_r, vga_g, vga_b;
     output h_sync, v_sync;
-    wire newClk, newClk2;
     wire newClk, newClk2;
     wire [2:0] ledOn;
     wire [9:0] ball_pos_x, ball_pos_y;
@@ -34,14 +38,14 @@ module vga_top(clk, rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_swt, R_swt);
     wire [9:0] padLY, padRY;
     wire [5:0] ball_vx, ball_vy;
   
+  
     
     clk_divider clkDiv (clk, rst, newClk);
     game_clock_divider clkDiv2 (clk, rst, newClk2);
     
     ball_collision physics(newClk2, rst, 10'd40, padLY, 10'd600, padRY, ball_pos_x, ball_pos_y, 9, ball_vx, ball_vy);
     ball puck(newClk2, rst, ball_vx, ball_vy, ball_pos_x, ball_pos_y, edgeleft, edgeright);
-   
-    
+    score s1(clk, rst, edgeleft, edgeright, resetflag,  LED_out, Anode_Activate);  
     paddle padL(!L_swt, L_swt, newClk2, rst, padLY);
     paddle padR(!R_swt, R_swt, newClk2, rst, padRY);
     

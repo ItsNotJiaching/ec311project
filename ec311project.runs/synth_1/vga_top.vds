@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Dec  2 22:47:17 2024
-# Process ID: 14968
+# Start of session at: Tue Dec  3 13:15:01 2024
+# Process ID: 4896
 # Current directory: C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/synth_1
 # Command line: vivado.exe -log vga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_top.tcl
 # Log file: C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/synth_1/vga_top.vds
@@ -19,7 +19,7 @@
 # Host memory       :16853 MB
 # Swap memory       :8321 MB
 # Total Virtual     :25174 MB
-# Available Virtual :6826 MB
+# Available Virtual :12401 MB
 #-----------------------------------------------------------
 source vga_top.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/utils_1/imports/synth_1/ball_collision.dcp
@@ -35,17 +35,10 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
-INFO: [Synth 8-7075] Helper process launched with PID 8424
+INFO: [Synth 8-7075] Helper process launched with PID 17916
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1502.027 ; gain = 449.523
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1498.285 ; gain = 447.113
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-9339] data object 'newClk' is already declared [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:30]
-INFO: [Synth 8-6826] previous declaration of 'newClk' is from here [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:29]
-CRITICAL WARNING: [Synth 8-11152] second declaration of 'newClk' is ignored [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:30]
-CRITICAL WARNING: [Synth 8-9339] data object 'newClk2' is already declared [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:30]
-INFO: [Synth 8-6826] previous declaration of 'newClk2' is from here [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:29]
-CRITICAL WARNING: [Synth 8-11152] second declaration of 'newClk2' is ignored [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:30]
 INFO: [Synth 8-6157] synthesizing module 'vga_top' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:23]
 INFO: [Synth 8-6157] synthesizing module 'clk_divider' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/clk_divider.v:22]
 INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/clk_divider.v:22]
@@ -59,6 +52,8 @@ WARNING: [Synth 8-6090] variable 'ball_y' is written by both blocking and non-bl
 WARNING: [Synth 8-6090] variable 'ball_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:41]
 WARNING: [Synth 8-6090] variable 'ball_y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:42]
 INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:2]
+INFO: [Synth 8-6157] synthesizing module 'score' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/score.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'score' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/score.v:1]
 INFO: [Synth 8-6157] synthesizing module 'paddle' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/paddle.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'paddle' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/paddle.v:1]
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:23]
@@ -77,119 +72,53 @@ WARNING: [Synth 8-6014] Unused sequential element distBallPaddle2_y_reg was remo
 WARNING: [Synth 8-6014] Unused sequential element distBallPaddle1_x_reg was removed.  [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:53]
 WARNING: [Synth 8-6014] Unused sequential element distBallPaddle2_x_reg was removed.  [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:59]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1614.730 ; gain = 562.227
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1610.926 ; gain = 559.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1614.730 ; gain = 562.227
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1610.926 ; gain = 559.754
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1614.730 ; gain = 562.227
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1610.926 ; gain = 559.754
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1614.730 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1610.926 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'LED_out[6]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:74]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:74]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[5]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:75]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:75]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[4]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:76]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:76]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[3]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:77]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:77]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[2]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:78]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:78]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[1]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:79]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:79]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[0]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:80]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:80]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[6]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:81]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:81]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[5]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:82]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:82]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[4]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:83]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:83]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[3]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:84]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:84]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[2]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:85]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:85]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[1]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:86]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:86]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'LED_out[0]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:87]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Anode_Activate[0]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:92]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:92]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Anode_Activate[1]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:93]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:93]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Anode_Activate[2]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:94]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:94]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Anode_Activate[3]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:95]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Anode_Activate[0]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:100]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:100]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Anode_Activate[1]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:101]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:101]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Anode_Activate[2]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:102]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:102]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'Anode_Activate[3]'. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:103]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc:103]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/vga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1717.172 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1651.977 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1717.172 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1651.977 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -204,7 +133,7 @@ Detailed RTL Component Info :
 	   2 Input   10 Bit       Adders := 14    
 	   2 Input    7 Bit       Adders := 1     
 	   2 Input    6 Bit       Adders := 4     
-	   2 Input    1 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 3     
 +---Registers : 
 	               33 Bit    Registers := 1     
 	               32 Bit    Registers := 2     
@@ -212,11 +141,12 @@ Detailed RTL Component Info :
 	                6 Bit    Registers := 2     
 	                4 Bit    Registers := 3     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 11    
+	                1 Bit    Registers := 13    
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 8     
 	   2 Input   10 Bit        Muxes := 13    
 	   2 Input    6 Bit        Muxes := 13    
+	   4 Input    4 Bit        Muxes := 2     
 	   2 Input    3 Bit        Muxes := 4     
 	   2 Input    2 Bit        Muxes := 4     
 	   2 Input    1 Bit        Muxes := 15    
@@ -237,26 +167,26 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'sys_clk_pin'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -274,37 +204,46 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin resetflag_OBUF with 1st driver pin 's1/resetflag_reg__0/Q' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/score.v:20]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin resetflag_OBUF with 2nd driver pin 's1/resetflag_reg/Q' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/score.v:25]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -321,42 +260,42 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     2|
-|2     |CARRY4 |    55|
-|3     |LUT1   |    22|
-|4     |LUT2   |    67|
-|5     |LUT3   |    33|
+|2     |CARRY4 |    61|
+|3     |LUT1   |    26|
+|4     |LUT2   |    72|
+|5     |LUT3   |    38|
 |6     |LUT4   |    42|
-|7     |LUT5   |    89|
-|8     |LUT6   |    56|
-|9     |FDCE   |    34|
-|10    |FDRE   |    63|
+|7     |LUT5   |    84|
+|8     |LUT6   |    58|
+|9     |FDCE   |    54|
+|10    |FDRE   |    69|
 |11    |FDSE   |    14|
 |12    |IBUF   |     4|
-|13    |OBUF   |    14|
+|13    |OBUF   |    26|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1651.977 ; gain = 600.805
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1717.172 ; gain = 562.227
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1717.172 ; gain = 664.668
+Synthesis finished with 0 errors, 2 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1651.977 ; gain = 559.754
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1651.977 ; gain = 600.805
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1717.172 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1651.977 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1717.172 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1651.977 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 44411720
+Synth Design complete | Checksum: ec6c9d23
 INFO: [Common 17-83] Releasing license: Synthesis
-40 Infos, 39 Warnings, 26 Critical Warnings and 0 Errors encountered.
+40 Infos, 16 Warnings, 2 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1717.172 ; gain = 1081.328
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1651.977 ; gain = 1017.262
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1717.172 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1651.977 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/synth_1/vga_top.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file vga_top_utilization_synth.rpt -pb vga_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 22:47:47 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  3 13:15:31 2024...
