@@ -41,7 +41,10 @@ module ball(
         ball_x <= screen_width/2;
         ball_y <= screen_height/2; 
         edgeflag_right <= 1;
-      end
+      end //else begin
+      //  if (ball_y <= 0 || ball_y >= 480)begin
+       //   ball_y <= ball_y + velocity_y;
+      //  end 
     end 
   end 
  
