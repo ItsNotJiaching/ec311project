@@ -2,6 +2,12 @@
 2020.2
 May 22 2024
 19:03:11
-C:/Users/jsorkin/ec311project/ec311project.sim/sim_1/behav/xsim/glbl.v,1732548724,verilog,,,,glbl,,,,,,,,
-C:/Users/jsorkin/ec311project/ec311project.srcs/sim_1/new/paddle_tb.v,1732548724,verilog,,,,paddle_tb,,,,,,,,
-C:/Users/jsorkin/ec311project/ec311project.srcs/sources_1/new/paddle.v,1732548724,verilog,,C:/Users/jsorkin/ec311project/ec311project.srcs/sim_1/new/paddle_tb.v,,paddle,,,,,,,,
+C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.sim/sim_1/behav/xsim/glbl.v,1733197116,verilog,,,,glbl,,,,,,,,
+C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v,1733194366,verilog,,C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v,,ball,,,,,,,,
+C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v,1733197512,verilog,,C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/clk_divider.v,,ball_collision,,,,,,,,
+C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/clk_divider.v,1733183752,verilog,,C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/game_clock_divider.v,,clk_divider,,,,,,,,
+C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/game_clock_divider.v,1733185820,verilog,,C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/paddle.v,,game_clock_divider,,,,,,,,
+C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/paddle.v,1733196082,verilog,,C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/rectangle.v,,paddle,,,,,,,,
+C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/rectangle.v,1733187573,verilog,,C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v,,rectangle,,,,,,,,
+C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v,1733197562,verilog,,C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v,,vga_controller,,,,,,,,
+C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v,1733197485,verilog,,,,vga_top,,,,,,,,

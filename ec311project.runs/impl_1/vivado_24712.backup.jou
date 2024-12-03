@@ -3,13 +3,13 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Nov 25 10:50:23 2024
-# Process ID: 4112
-# Current directory: C:/Users/jsorkin/ec311project/ec311project.runs/impl_1
+# Start of session at: Mon Dec  2 22:39:48 2024
+# Process ID: 24712
+# Current directory: C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/impl_1
 # Command line: vivado.exe -log vga_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vga_top.tcl -notrace
-# Log file: C:/Users/jsorkin/ec311project/ec311project.runs/impl_1/vga_top.vdi
-# Journal file: C:/Users/jsorkin/ec311project/ec311project.runs/impl_1\vivado.jou
-# Running On        :ECE-PHO115-17
+# Log file: C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/impl_1/vga_top.vdi
+# Journal file: C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/impl_1\vivado.jou
+# Running On        :ECE-PHO115-12
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
 # Processor Detail  :12th Gen Intel(R) Core(TM) i7-12700K
@@ -17,8 +17,8 @@
 # CPU Physical cores:12
 # CPU Logical cores :20
 # Host memory       :16853 MB
-# Swap memory       :2550 MB
-# Total Virtual     :19403 MB
-# Available Virtual :6469 MB
+# Swap memory       :8321 MB
+# Total Virtual     :25174 MB
+# Available Virtual :6805 MB
 #-----------------------------------------------------------
 source vga_top.tcl -notrace

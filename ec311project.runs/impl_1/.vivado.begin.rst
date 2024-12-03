@@ -1,60 +1,15 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="21184" HostCore="20" HostMemory="016853479424">
+    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-12" Pid="1112" HostCore="20" HostMemory="016853479424">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="19416" HostCore="20" HostMemory="016853479424">
+    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-12" Pid="25724" HostCore="20" HostMemory="016853479424">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="15868" HostCore="20" HostMemory="016853479424">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="14084" HostCore="20" HostMemory="016853479424">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="17600" HostCore="20" HostMemory="016853479424">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="712" HostCore="20" HostMemory="016853479424">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="21364" HostCore="20" HostMemory="016853479424">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="14484" HostCore="20" HostMemory="016853479424">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="15240" HostCore="20" HostMemory="016853479424">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="10552" HostCore="20" HostMemory="016853479424">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="10956" HostCore="20" HostMemory="016853479424">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-17" Pid="13828" HostCore="20" HostMemory="016853479424">
+    <Process Command="vivado.bat" Owner="jsorkin" Host="ECE-PHO115-12" Pid="22204" HostCore="20" HostMemory="016853479424">
     </Process>
 </ProcessHandle>

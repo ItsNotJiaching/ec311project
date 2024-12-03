@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/jsorkin/ec311project/ec311project.runs/synth_1/vga_top.tcl"
+  variable script "C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/synth_1/vga_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -57,10 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 5
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {17-179}  -suppress 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
@@ -68,23 +65,23 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/jsorkin/ec311project/ec311project.cache/wt [current_project]
-set_property parent.project_path C:/Users/jsorkin/ec311project/ec311project.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.cache/wt [current_project]
+set_property parent.project_path C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/jsorkin/ec311project/ec311project.cache/ip [current_project]
+set_property ip_output_repo c:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/jsorkin/ec311project/ec311project.srcs/sources_1/new/ball.v
-  C:/Users/jsorkin/ec311project/ec311project.srcs/sources_1/new/ball_collision.v
-  C:/Users/jsorkin/ec311project/ec311project.srcs/sources_1/new/clk_divider.v
-  C:/Users/jsorkin/ec311project/ec311project.srcs/sources_1/new/game_clock_divider.v
-  C:/Users/jsorkin/ec311project/ec311project.srcs/sources_1/new/paddle.v
-  C:/Users/jsorkin/ec311project/ec311project.srcs/sources_1/new/rectangle.v
-  C:/Users/jsorkin/ec311project/ec311project.srcs/sources_1/new/vga_controller.v
-  C:/Users/jsorkin/ec311project/ec311project.srcs/sources_1/new/vga_top.v
+  C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v
+  C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v
+  C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/clk_divider.v
+  C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/game_clock_divider.v
+  C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/paddle.v
+  C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/rectangle.v
+  C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v
+  C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -95,12 +92,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/jsorkin/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/jsorkin/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc]
+read_xdc C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/jsorkin/ec311project/ec311project.srcs/utils_1/imports/synth_1/ball_collision.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/utils_1/imports/synth_1/ball_collision.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

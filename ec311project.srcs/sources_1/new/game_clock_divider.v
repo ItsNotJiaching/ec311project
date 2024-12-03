@@ -29,7 +29,8 @@ parameter toggle_value = 500000 - 1; // 100hz he claims
 
 	 
 reg[32:0] cnt;
-
+initial cnt = 0;
+initial divided_clk = 0;
 always@(posedge clk_in or posedge rst)
 begin
 	if (rst==1) begin
