@@ -26,7 +26,8 @@ module ball(
       ball_x <= screen_width/2;
       ball_y <= screen_height/2;
       edgeflag_left <= 0;
-      edgeflag_right <= 0;     // reset velocity at top level module 
+      edgeflag_right <= 0; 
+      resetflag <= 0;// reset velocity at top level module 
     end else begin 
       // if reset is not true, we capture and update the ball location.
       ball_x = (velocity_x[5] == 1) ? ball_x - (~{4'b1111, velocity_x} + 10'd1) : ball_x + velocity_x;
