@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "params.vh"
 module ball(
   input wire clk,
   input wire resetflag,
@@ -32,12 +33,12 @@ module ball(
       ball_y = (velocity_y[5] == 1) ? ball_y - (~{4'b1111, velocity_y} + 10'd1) : ball_y + velocity_y;
       end 
    // checking if the collision happened on the left or the right.
-      if ( ball_x <= 0 )begin
+      if ( ball_x <= (LPAD_XPOS) )begin
         ball_x <= screen_width/2;
         ball_y <= screen_height/2; 
         edgeflag_left <= 1;
       end else begin 
-      if (ball_x >= screen_width -1) begin 
+      if (ball_x >= (RPAD_XPOS)) begin 
         ball_x <= screen_width/2;
         ball_y <= screen_height/2; 
         edgeflag_right <= 1;

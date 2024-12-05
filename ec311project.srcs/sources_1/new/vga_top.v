@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -20,14 +21,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module vga_top(clk, rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_swt, R_swt, LED_out, Anode_Activate);
+module vga_top(clk, clk_rst, game_rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_swt, R_swt);
     
     // Score Controller Outputs
-    wire resetflag;
-    output wire [6:0] LED_out;
-    output wire [3:0] Anode_Activate;
+//    wire resetflag;
+//    output wire [6:0] LED_out;
+//    output wire [3:0] Anode_Activate;
     
-    input clk, rst;
+    input clk, clk_rst, game_rst;
     input L_swt, R_swt;
     output reg [3:0] vga_r, vga_g, vga_b;
     output h_sync, v_sync;
@@ -40,14 +41,14 @@ module vga_top(clk, rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_swt, R_swt, LED_
   
   
     
-    clk_divider clkDiv (clk, rst, newClk);
-    game_clock_divider clkDiv2 (clk, rst, newClk2);
+    clk_divider clkDiv (clk, clk_rst, newClk);
+    game_clock_divider clkDiv2 (newClk, clk_rst, newClk2);
     
-    ball_collision physics(newClk2, rst, 10'd40, padLY, 10'd600, padRY, ball_pos_x, ball_pos_y, 9, ball_vx, ball_vy);
-    ball puck(newClk2, rst, ball_vx, ball_vy, ball_pos_x, ball_pos_y, edgeleft, edgeright);
-    score s1(clk, rst, edgeleft, edgeright, resetflag,  LED_out, Anode_Activate);  
-    paddle padL(!L_swt, L_swt, newClk2, rst, padLY);
-    paddle padR(!R_swt, R_swt, newClk2, rst, padRY);
+    ball_collision physics(newClk2, game_rst, padLY, padRY, ball_pos_x, ball_pos_y, 9, ball_vx, ball_vy);
+    ball puck(newClk2, game_rst, ball_vx, ball_vy, ball_pos_x, ball_pos_y, edgeleft, edgeright);
+//    score s1(clk, rst, edgeleft, edgeright, resetflag,  LED_out, Anode_Activate);  
+    paddle padL(!L_swt, L_swt, newClk2, game_rst, padLY);
+    paddle padR(!R_swt, R_swt, newClk2, game_rst, padRY);
     
     
     vga_controller vga_con (newClk, h_sync, v_sync, ball_pos_x, ball_pos_y, padLY, padRY, ledOn);
@@ -65,9 +66,9 @@ module vga_top(clk, rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_swt, R_swt, LED_
     begin
 
       if(ledOn == 3'b000) begin
-            vga_r <= 4'b0000;
-            vga_g <= 4'b0000;
-            vga_b <= 4'b0000;
+            vga_r <= 4'b0011;
+            vga_g <= 4'b0011;
+            vga_b <= 4'b0011;
       end else begin
             vga_r <= ((ledOn[2]  == 1) ? 4'b0000 : 4'b1111);
             vga_g <= ((ledOn[1]  == 1) ? 4'b0000 : 4'b1111);

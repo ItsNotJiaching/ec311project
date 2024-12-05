@@ -18,9 +18,9 @@ module paddle(
         if (reset) paddle_y = 240;
         else begin
             if (user_up) begin
-                paddle_velocity = (paddle_y < (480-55)) ? 2 : 0;
+                paddle_velocity = (paddle_y < (480-55)) ? 5 : 0;
             end else if (user_down) begin
-                paddle_velocity = (paddle_y > 55) ? -2 : 0;
+                paddle_velocity = (paddle_y > 55) ? -5 : 0;
             end
             
             //TODO: impl top and bottom bounds

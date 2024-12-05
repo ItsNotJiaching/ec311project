@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+`include "params.vh"
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -111,8 +112,8 @@ module vga_controller(clk, h_sync, v_sync, ball_pos_x, ball_pos_y, pad_l_y, pad_
     
     wire drawPuck, drawPaddleA, drawPaddleB;
     rectangle puck(7, 8, ball_pos_x, ball_pos_y, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPuck);
-    rectangle padA(55, 13, 40, pad_l_y, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleA);
-    rectangle padB(55, 15, 600, pad_r_y, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleB);
+    rectangle padA(PADDLE_HEIGHT_2, PADDLE_WIDTH_2, LPAD_XPOS, pad_l_y, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleA);
+    rectangle padB(PADDLE_HEIGHT_2, PADDLE_WIDTH_2, RPAD_XPOS, pad_r_y, widthPos - W_SHIFT, heightPos - H_SHIFT, drawPaddleB);
     
     // SCANNING TEST CODE
 //    always@(posedge  v_sync)
