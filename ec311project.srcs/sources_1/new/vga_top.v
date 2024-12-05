@@ -24,9 +24,8 @@
 module vga_top(clk, clk_rst, game_rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_swt, R_swt);
     
     // Score Controller Outputs
-//    wire resetflag;
-//    output wire [6:0] LED_out;
-//    output wire [3:0] Anode_Activate;
+    output wire [6:0] LED_out;
+    output wire [3:0] Anode_Activate;
     
     input clk, clk_rst, game_rst;
     input L_swt, R_swt;
