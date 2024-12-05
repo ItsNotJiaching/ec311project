@@ -1,4 +1,10 @@
-module score(input clk, input reset, input collision_flag1, input collision_flag2, output reg resetflag, output reg [6:0] LED_out, output reg [3:0] Anode_Activate);
+module score(input clk, 
+            input reset, 
+            input collision_flag1, 
+            input collision_flag2, 
+            output reg resetflag, 
+            output reg [6:0] LED_out, 
+            output reg [3:0] Anode_Activate);
 
 // collisionflag for each player if ball does not hit paddle (a point for the opposing player) 
 // all global var
@@ -27,6 +33,11 @@ end
 
 always @(*) begin
     displayed_number = twoscore * 1000 + onescore;
+    if (twoscore >= 9 || onescore >= 9) begin
+            twoscore <= 3'b000;
+            onescore <= 3'b000;
+        end
+     
 end
     
     always @(posedge clk or posedge reset)
@@ -35,6 +46,13 @@ end
             refresh_counter <= 0;
         else
             refresh_counter <= refresh_counter + 1;
+    end
+    always @(posedge reset)
+    begin 
+        if(reset==1) begin
+            twoscore <= 3'b000;
+            onescore <= 3'b000;
+        end
     end
     assign LED_activating_counter = refresh_counter[19:18];
     // anode activating signals for 4 LEDs, digit period of 2.6ms
