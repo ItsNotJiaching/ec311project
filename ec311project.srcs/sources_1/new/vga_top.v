@@ -37,14 +37,15 @@ module vga_top(clk, clk_rst, game_rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_sw
     wire edgeleft, edgeright;
     wire [9:0] padLY, padRY;
     wire [5:0] ball_vx, ball_vy;
+    wire resetflagprime;
   
   
     
     clk_divider clkDiv (clk, clk_rst, newClk);
     game_clock_divider clkDiv2 (newClk, clk_rst, newClk2);
     ball_collision physics(newClk2, game_rst, padLY, padRY, ball_pos_x, ball_pos_y, 9, ball_vx, ball_vy);
-    ball puck(newClk2, game_rst, ball_vx, ball_vy, ball_pos_x, ball_pos_y, edgeleft, edgeright);
-    score s1(clk, clk_rst, edgeleft, edgeright, game_rst, LED_out, Anode_Activate);  
+    ball puck(newClk2, game_rst, ball_vx, ball_vy, ball_pos_x, ball_pos_y, edgeleft, edgeright, resetflagprime);
+    score s1(clk, clk_rst, resetflagprime, edgeleft, edgeright, game_rst, LED_out, Anode_Activate);  
     paddle padL(!L_swt, L_swt, newClk2, game_rst, padLY);
     paddle padR(!R_swt, R_swt, newClk2, game_rst, padRY);
     
