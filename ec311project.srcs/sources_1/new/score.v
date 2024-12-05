@@ -12,6 +12,8 @@ module score(input clk,
 // initial score when game starts
 initial begin
 resetflag = 0;
+LED_out = 7'b0000000;
+Anode_Activate = 4'b0111; 
 end
 reg twoscore = 3'b000;
 reg onescore = 3'b000;
