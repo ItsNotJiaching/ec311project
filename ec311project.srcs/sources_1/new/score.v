@@ -10,6 +10,9 @@ module score(input clk,
 // all global var
 
 // initial score when game starts
+initial begin
+resetflag = 0;
+end
 reg twoscore = 3'b000;
 reg onescore = 3'b000;
 reg [26:0] one_second_counter; // counter for generating 1 second clock enable
