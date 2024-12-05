@@ -19,6 +19,7 @@ module ball(
     ball_y = screen_height/2;
     edgeflag_left = 0; // at the beginning assuming that edgeflag left or right is at logic 0 because ball at center.
     edgeflag_right = 0;
+    resetflagprime = 0;
     
   end
  always @ (posedge clk) begin
