@@ -46,7 +46,7 @@ module vga_top(clk, clk_rst, game_rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_sw
     
     ball_collision physics(newClk2, game_rst, padLY, padRY, ball_pos_x, ball_pos_y, 9, ball_vx, ball_vy);
     ball puck(newClk2, game_rst, ball_vx, ball_vy, ball_pos_x, ball_pos_y, edgeleft, edgeright);
-//    score s1(clk, rst, edgeleft, edgeright, resetflag,  LED_out, Anode_Activate);  
+    score s1(clk, rst, edgeleft, edgeright, game_rst,  LED_out, Anode_Activate);  
     paddle padL(!L_swt, L_swt, newClk2, game_rst, padLY);
     paddle padR(!R_swt, R_swt, newClk2, game_rst, padRY);
     
