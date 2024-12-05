@@ -8,7 +8,8 @@ module ball(
   output reg [9:0] ball_x,
   output reg [9:0] ball_y,
   output reg edgeflag_left,
-  output reg edgeflag_right
+  output reg edgeflag_right,
+  output reg resetflagprime
 );
 // locally declearing the width and height of the screen.    
    parameter screen_width = 640;
@@ -26,8 +27,7 @@ module ball(
       ball_x <= screen_width/2;
       ball_y <= screen_height/2;
       edgeflag_left <= 0;
-      edgeflag_right <= 0; 
-      resetflag <= 0;// reset velocity at top level module 
+      edgeflag_right <= 0;   // reset velocity at top level module 
     end else begin 
       // if reset is not true, we capture and update the ball location.
       ball_x = (velocity_x[5] == 1) ? ball_x - (~{4'b1111, velocity_x} + 10'd1) : ball_x + velocity_x;
@@ -38,12 +38,16 @@ module ball(
         ball_x <= screen_width/2;
         ball_y <= screen_height/2; 
         edgeflag_left <= 1;
+        resetflagprime <= 1;
       end else begin 
       if (ball_x >= (RPAD_XPOS)) begin 
         ball_x <= screen_width/2;
         ball_y <= screen_height/2; 
         edgeflag_right <= 1;
-      end //else begin
+        resetflagprime <= 1;
+      end else begin
+        resetflagprime <= 0;
+      end
       //  if (ball_y <= 0 || ball_y >= 480)begin
        //   ball_y <= ball_y + velocity_y;
       //  end 
