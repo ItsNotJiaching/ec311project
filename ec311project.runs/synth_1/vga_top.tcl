@@ -58,7 +58,7 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 5
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/jsorkin/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9892-ECE-PHO115-12/incrSyn
+set_param synth.incrementalSynthesisCache C:/Users/jsorkin/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7840-ECE-PHO115-12/incrSyn
 set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -84,6 +84,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/game_clock_divider.v
   C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/paddle.v
   C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/rectangle.v
+  C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/score.v
   C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v
   C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v
 }

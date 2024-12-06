@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Thu Dec  5 14:20:21 2024
+| Date         : Fri Dec  6 13:46:44 2024
 | Host         : ECE-PHO115-12
 | Design       : design_1
 | Device       : xc7a100t-csg324-1--

@@ -19,16 +19,16 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module clk_divider(clk, reset, newClk);
+module clk_divider(clk, reset, vgaClk);
     
     input clk, reset;
-    output newClk;
+    output vgaClk;
     
     reg [1:0] cnt = 0;
     reg toggleVal = 1;
     reg tempClk = 0;
     
-    assign newClk = tempClk;
+    assign vgaClk = tempClk;
     
     always@(posedge clk)
     begin        

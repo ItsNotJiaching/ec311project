@@ -10,6 +10,7 @@ module ball_collision (
   input wire [9:0] ball_x,
   input wire [9:0] ball_y,
   input wire [4:0] ball_radius,
+  input wire loser,
   output reg [5:0] velocity_x,
   output reg [5:0] velocity_y
 );
@@ -40,7 +41,7 @@ end
   always @ (posedge clk) begin
     if (reset) begin
     //TODO: add stuff to this
-      velocity_x = { 6'd2 }; // change this to LOSER's direction!!
+      velocity_x = (loser ? -1 : 1) * (6'd2); // LOSER's direction!!
       velocity_y = 0;
     end
     

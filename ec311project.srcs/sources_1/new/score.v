@@ -1,7 +1,7 @@
 module score(input clk, 
             input reset, 
-            input collision_flag1, 
-            input collision_flag2, 
+            input[2:0] Lscore, 
+            input[2:0] Rscore, 
             output reg resetflag, 
             output reg [6:0] LED_out, 
             output reg [3:0] Anode_Activate);
@@ -15,6 +15,7 @@ resetflag = 0;
 LED_out = 7'b0000000;
 Anode_Activate = 4'b0111; 
 end
+
 reg twoscore = 3'b000;
 reg onescore = 3'b000;
 reg [26:0] one_second_counter; // counter for generating 1 second clock enable
@@ -26,39 +27,43 @@ reg [19:0] refresh_counter; // 20-bit for creating 10.5ms refresh period or 380H
 wire [1:0] LED_activating_counter; 
     
 
-always @ (posedge collision_flag1) begin
-twoscore <= (twoscore + 3'b001);
-resetflag <= 1; // if reset flag 1 need to reset collision flag in another var and set reset flag here to 0
+
+
+//prep scores for displaying
+always @(Lscore, Rscore) begin
+    displayed_number = Lscore * 1000 + Rscore;
 end
 
-always @ (posedge collision_flag2) begin
-onescore <= onescore + 3'b001;
-resetflag <= 1;
-end
 
-always @(*) begin
-    displayed_number = twoscore * 1000 + onescore;
-    if (twoscore >= 9 || onescore >= 9) begin
-            twoscore <= 3'b000;
-            onescore <= 3'b000;
-        end
-     
-end
-    
-    always @(posedge clk or posedge reset)
-    begin 
+
+always @(posedge clk)
+begin
+
+
+//reset the resetflag after collision is handled!
+//check refresh counter 
+
         if(reset==1)
             refresh_counter <= 0;
         else
             refresh_counter <= refresh_counter + 1;
-    end
-    always @(posedge reset)
-    begin 
-        if(reset==1) begin
-            twoscore <= 3'b000;
-            onescore <= 3'b000;
-        end
-    end
+
+//check collision flags
+
+////reset scores if too high
+//        if (twoscore >= 9 || onescore >= 9) begin
+//            twoscore <= 3'b000;
+//            onescore <= 3'b000;
+//        end
+//// check reset
+//        if(reset == 1) begin
+//            twoscore <= 3'b000;
+//            onescore <= 3'b000;
+//        end
+        
+        
+end
+
     assign LED_activating_counter = refresh_counter[19:18];
     // anode activating signals for 4 LEDs, digit period of 2.6ms
     // decoder to generate anode signals 
@@ -108,5 +113,7 @@ end
         default: LED_out = 7'b0000001; // "0"
         endcase
     end
+
+
 
 endmodule
