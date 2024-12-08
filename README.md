@@ -1,18 +1,22 @@
 # ec311project
 We will be recreating Pong using Verilog programming to the VGA as our Fall 2024 EC311 final project.
 
-## Members
+## Project Name
+Pong on VGA/FPGA
+
+## Team Members
 Hannah Tandang, Jiaxing Wang, Jianzheng Ruan, Joseph Sorkin
 
-Project Name: Pong on VGA/FPGA
-Team Members: Jianzheng Ruan, Joey Sorkin, Hannah Tandang, Jiaxing Wang
-Link to video:
+## Demo Video Link
 
-Overview of Project:
+## Overview of Project
 
-How to run:
+## How to Run Project
+1. Download the source code as a .zip file and unzip the compressed folder. 
+2. In 0-all-project-files, open ec311project.xpr using Vivado 2024.1 or later.
 
-Overview of code structure of relevant main modules:
+## Overview of Code Structure 
+The following describes the code structure of several relevant main modules:
 - vga_top.v:
 - vga_controller.v:
 - ball.v:
