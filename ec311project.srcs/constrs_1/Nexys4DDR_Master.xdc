@@ -6,8 +6,8 @@
 ## Clock signal
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
 create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports {clk}];
-set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
-create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports {clk}];
+#set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
+#create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports {clk}];
 
 
 ##Switches
@@ -93,10 +93,10 @@ set_property -dict { PACKAGE_PIN J17   IOSTANDARD LVCMOS33 } [get_ports { Anode_
 set_property -dict { PACKAGE_PIN J18   IOSTANDARD LVCMOS33 } [get_ports { Anode_Activate[1] }]; #IO_L23N_T3_FWE_B_15 Sch=an[1] 
 set_property -dict { PACKAGE_PIN T9    IOSTANDARD LVCMOS33 } [get_ports { Anode_Activate[2] }]; #IO_L24P_T3_A01_D17_14 Sch=an[2]
 set_property -dict { PACKAGE_PIN J14   IOSTANDARD LVCMOS33 } [get_ports { Anode_Activate[3] }]; #IO_L19P_T3_A22_15 Sch=an[3]
-##set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33 } [get_ports { 0 }]; #IO_L8N_T1_D12_14 Sch=an[4]
-##set_property -dict { PACKAGE_PIN T14   IOSTANDARD LVCMOS33 } [get_ports { 0 }]; #IO_L14P_T2_SRCC_14 Sch=an[5]
-##set_property -dict { PACKAGE_PIN K2    IOSTANDARD LVCMOS33 } [get_ports { 0 }]; #IO_L23P_T3_35 Sch=an[6]
-##set_property -dict { PACKAGE_PIN U13   IOSTANDARD LVCMOS33 } [get_ports { 0 }]; #IO_L23N_T3_A02_D18_14 Sch=an[7]
+set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33 } [get_ports { Anode_Off[0] }]; #IO_L8N_T1_D12_14 Sch=an[4]
+set_property -dict { PACKAGE_PIN T14   IOSTANDARD LVCMOS33 } [get_ports { Anode_Off[1] }]; #IO_L14P_T2_SRCC_14 Sch=an[5]
+set_property -dict { PACKAGE_PIN K2    IOSTANDARD LVCMOS33 } [get_ports { Anode_Off[2] }]; #IO_L23P_T3_35 Sch=an[6]
+set_property -dict { PACKAGE_PIN U13   IOSTANDARD LVCMOS33 } [get_ports { Anode_Off[3] }]; #IO_L23N_T3_A02_D18_14 Sch=an[7]
 #set_property -dict { PACKAGE_PIN J17   IOSTANDARD LVCMOS33 } [get_ports { Anode_Activate[0] }]; #IO_L23P_T3_FOE_B_15 Sch=an[0]
 #set_property -dict { PACKAGE_PIN J18   IOSTANDARD LVCMOS33 } [get_ports { Anode_Activate[1] }]; #IO_L23N_T3_FWE_B_15 Sch=an[1] 
 #set_property -dict { PACKAGE_PIN T9    IOSTANDARD LVCMOS33 } [get_ports { Anode_Activate[2] }]; #IO_L24P_T3_A01_D17_14 Sch=an[2]

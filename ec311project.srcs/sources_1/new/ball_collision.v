@@ -41,7 +41,7 @@ end
   always @ (posedge clk) begin
     if (reset) begin
     //TODO: add stuff to this
-      velocity_x = (loser ? -1 : 1) * (6'd2); // LOSER's direction!!
+      velocity_x = (loser ? -2 : 2); 
       velocity_y = 0;
     end
     

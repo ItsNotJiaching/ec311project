@@ -21,12 +21,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module vga_top(clk, clk_rst, game_rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_swt, R_swt, LED_out, Anode_Activate, gameClkStart);
+module vga_top(clk, clk_rst, game_rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_swt, R_swt, LED_out, Anode_Activate, gameClkStart, Anode_Off);
     
     // Score Controller Outputs
     output [6:0] LED_out;
     output [3:0] Anode_Activate;
-    
+    output [3:0] Anode_Off;
     input clk, clk_rst, game_rst, gameClkStart;
     wire stage_rst;
     input L_swt, R_swt;
@@ -40,7 +40,7 @@ module vga_top(clk, clk_rst, game_rst, vga_r, vga_g, vga_b, h_sync, v_sync, L_sw
     wire [5:0] ball_vx, ball_vy;
     wire resetflag;
     reg gameOver = 0;
-   
+    assign Anode_Off = 4'b1111;
     always @ (Lscore, Rscore, clk_rst) begin
         if((Lscore > 3) | (Rscore > 3)) begin
             gameOver = 1;

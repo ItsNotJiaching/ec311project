@@ -73,6 +73,7 @@ end
         2'b00: begin
             Anode_Activate = 4'b0111; 
             // activate LED1 and Deactivate LED2, LED3, LED4
+
             LED_BCD = displayed_number/1000;
             // the first digit of the 16-bit number
               end

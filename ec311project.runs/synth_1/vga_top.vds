@@ -3,13 +3,13 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Dec  6 13:45:42 2024
-# Process ID: 12700
-# Current directory: C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/synth_1
+# Start of session at: Sat Dec  7 20:04:45 2024
+# Process ID: 19392
+# Current directory: X:/311proj/ec311project/ec311project.runs/synth_1
 # Command line: vivado.exe -log vga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_top.tcl
-# Log file: C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/synth_1/vga_top.vds
-# Journal file: C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/synth_1\vivado.jou
-# Running On        :ECE-PHO115-12
+# Log file: X:/311proj/ec311project/ec311project.runs/synth_1/vga_top.vds
+# Journal file: X:/311proj/ec311project/ec311project.runs/synth_1\vivado.jou
+# Running On        :ECE-PHO115-17
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
 # Processor Detail  :12th Gen Intel(R) Core(TM) i7-12700K
@@ -17,13 +17,14 @@
 # CPU Physical cores:12
 # CPU Logical cores :20
 # Host memory       :16853 MB
-# Swap memory       :2550 MB
-# Total Virtual     :19403 MB
-# Available Virtual :5947 MB
+# Swap memory       :43962 MB
+# Total Virtual     :60815 MB
+# Available Virtual :45329 MB
 #-----------------------------------------------------------
 source vga_top.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/utils_1/imports/synth_1/ball_collision.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/utils_1/imports/synth_1/ball_collision.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 628.898 ; gain = 199.004
+Command: read_checkpoint -auto_incremental -incremental X:/311proj/ec311project/ec311project.srcs/utils_1/imports/synth_1/ball_collision.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from X:/311proj/ec311project/ec311project.srcs/utils_1/imports/synth_1/ball_collision.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top vga_top -part xc7a100tcsg324-1
 Starting synth_design
@@ -35,103 +36,107 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 3772
+INFO: [Synth 8-7075] Helper process launched with PID 28680
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1499.320 ; gain = 450.367
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1499.523 ; gain = 449.242
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/params.vh:4]
-WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/params.vh:5]
-WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/params.vh:6]
-WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/params.vh:7]
-INFO: [Synth 8-6157] synthesizing module 'vga_top' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:24]
-INFO: [Synth 8-6157] synthesizing module 'clk_divider' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/clk_divider.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/clk_divider.v:22]
-INFO: [Synth 8-6157] synthesizing module 'game_clock_divider' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/game_clock_divider.v:21]
-INFO: [Synth 8-6155] done synthesizing module 'game_clock_divider' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/game_clock_divider.v:21]
-INFO: [Synth 8-6157] synthesizing module 'ball_collision' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'ball_collision' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:4]
-INFO: [Synth 8-6157] synthesizing module 'ball' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:3]
-WARNING: [Synth 8-6090] variable 'ball_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:42]
-WARNING: [Synth 8-6090] variable 'ball_y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:43]
-WARNING: [Synth 8-6090] variable 'ball_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:48]
-WARNING: [Synth 8-6090] variable 'ball_y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:49]
-WARNING: [Synth 8-6090] variable 'score_right' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:50]
-WARNING: [Synth 8-6090] variable 'ball_x' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:54]
-WARNING: [Synth 8-6090] variable 'ball_y' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:55]
-WARNING: [Synth 8-6090] variable 'score_left' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:56]
-INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball.v:3]
-INFO: [Synth 8-6157] synthesizing module 'score' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/score.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'score' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/score.v:1]
-INFO: [Synth 8-6157] synthesizing module 'paddle' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/paddle.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'paddle' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/paddle.v:1]
-INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:24]
-INFO: [Synth 8-6157] synthesizing module 'rectangle' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/rectangle.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'rectangle' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/rectangle.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'x_draw' does not match port width (10) of module 'rectangle' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:114]
-WARNING: [Synth 8-689] width (32) of port connection 'y_draw' does not match port width (10) of module 'rectangle' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:114]
-WARNING: [Synth 8-689] width (32) of port connection 'x_draw' does not match port width (10) of module 'rectangle' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:115]
-WARNING: [Synth 8-689] width (32) of port connection 'y_draw' does not match port width (10) of module 'rectangle' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:115]
-WARNING: [Synth 8-689] width (32) of port connection 'x_draw' does not match port width (10) of module 'rectangle' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:116]
-WARNING: [Synth 8-689] width (32) of port connection 'y_draw' does not match port width (10) of module 'rectangle' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:116]
-INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'vga_top' (0#1) [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:24]
-WARNING: [Synth 8-6014] Unused sequential element distBallPaddle1_y_reg was removed.  [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:48]
-WARNING: [Synth 8-6014] Unused sequential element distSignBit1_reg was removed.  [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:49]
-WARNING: [Synth 8-6014] Unused sequential element distBallPaddle2_y_reg was removed.  [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:54]
-WARNING: [Synth 8-6014] Unused sequential element distSignBit2_reg was removed.  [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:55]
-WARNING: [Synth 8-6014] Unused sequential element distBallPaddle1_x_reg was removed.  [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:61]
-WARNING: [Synth 8-6014] Unused sequential element distBallPaddle2_x_reg was removed.  [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:67]
-WARNING: [Synth 8-6014] Unused sequential element vga_g_reg was removed.  [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:97]
-WARNING: [Synth 8-6014] Unused sequential element vga_b_reg was removed.  [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:98]
+WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [X:/311proj/ec311project/ec311project.srcs/sources_1/new/params.vh:4]
+WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [X:/311proj/ec311project/ec311project.srcs/sources_1/new/params.vh:5]
+WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [X:/311proj/ec311project/ec311project.srcs/sources_1/new/params.vh:6]
+WARNING: [Synth 8-11145] root scope declaration is not allowed in Verilog 95/2K mode [X:/311proj/ec311project/ec311project.srcs/sources_1/new/params.vh:7]
+INFO: [Synth 8-6157] synthesizing module 'vga_top' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clk_divider' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/clk_divider.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (0#1) [X:/311proj/ec311project/ec311project.srcs/sources_1/new/clk_divider.v:22]
+INFO: [Synth 8-6157] synthesizing module 'game_clock_divider' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/game_clock_divider.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'game_clock_divider' (0#1) [X:/311proj/ec311project/ec311project.srcs/sources_1/new/game_clock_divider.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ball_collision' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ball_collision' (0#1) [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ball' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball.v:3]
+WARNING: [Synth 8-6090] variable 'ball_x' is written by both blocking and non-blocking assignments, entire logic could be removed [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball.v:42]
+WARNING: [Synth 8-6090] variable 'ball_y' is written by both blocking and non-blocking assignments, entire logic could be removed [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball.v:43]
+WARNING: [Synth 8-6090] variable 'ball_x' is written by both blocking and non-blocking assignments, entire logic could be removed [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball.v:48]
+WARNING: [Synth 8-6090] variable 'ball_y' is written by both blocking and non-blocking assignments, entire logic could be removed [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball.v:49]
+WARNING: [Synth 8-6090] variable 'score_right' is written by both blocking and non-blocking assignments, entire logic could be removed [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball.v:50]
+WARNING: [Synth 8-6090] variable 'ball_x' is written by both blocking and non-blocking assignments, entire logic could be removed [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball.v:54]
+WARNING: [Synth 8-6090] variable 'ball_y' is written by both blocking and non-blocking assignments, entire logic could be removed [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball.v:55]
+WARNING: [Synth 8-6090] variable 'score_left' is written by both blocking and non-blocking assignments, entire logic could be removed [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball.v:3]
+INFO: [Synth 8-6157] synthesizing module 'score' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/score.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'score' (0#1) [X:/311proj/ec311project/ec311project.srcs/sources_1/new/score.v:1]
+INFO: [Synth 8-6157] synthesizing module 'paddle' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/paddle.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'paddle' (0#1) [X:/311proj/ec311project/ec311project.srcs/sources_1/new/paddle.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:24]
+INFO: [Synth 8-6157] synthesizing module 'rectangle' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/rectangle.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rectangle' (0#1) [X:/311proj/ec311project/ec311project.srcs/sources_1/new/rectangle.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'x_draw' does not match port width (10) of module 'rectangle' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:114]
+WARNING: [Synth 8-689] width (32) of port connection 'y_draw' does not match port width (10) of module 'rectangle' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:114]
+WARNING: [Synth 8-689] width (32) of port connection 'x_draw' does not match port width (10) of module 'rectangle' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:115]
+WARNING: [Synth 8-689] width (32) of port connection 'y_draw' does not match port width (10) of module 'rectangle' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:115]
+WARNING: [Synth 8-689] width (32) of port connection 'x_draw' does not match port width (10) of module 'rectangle' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:116]
+WARNING: [Synth 8-689] width (32) of port connection 'y_draw' does not match port width (10) of module 'rectangle' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_controller.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'vga_top' (0#1) [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_top.v:24]
+WARNING: [Synth 8-6014] Unused sequential element distBallPaddle1_y_reg was removed.  [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:48]
+WARNING: [Synth 8-6014] Unused sequential element distSignBit1_reg was removed.  [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:49]
+WARNING: [Synth 8-6014] Unused sequential element distBallPaddle2_y_reg was removed.  [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:54]
+WARNING: [Synth 8-6014] Unused sequential element distSignBit2_reg was removed.  [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:55]
+WARNING: [Synth 8-6014] Unused sequential element distBallPaddle1_x_reg was removed.  [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:61]
+WARNING: [Synth 8-6014] Unused sequential element distBallPaddle2_x_reg was removed.  [X:/311proj/ec311project/ec311project.srcs/sources_1/new/ball_collision.v:67]
+WARNING: [Synth 8-6014] Unused sequential element vga_g_reg was removed.  [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_top.v:97]
+WARNING: [Synth 8-6014] Unused sequential element vga_b_reg was removed.  [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_top.v:98]
+WARNING: [Synth 8-3917] design vga_top has port Anode_Off[3] driven by constant 1
+WARNING: [Synth 8-3917] design vga_top has port Anode_Off[2] driven by constant 1
+WARNING: [Synth 8-3917] design vga_top has port Anode_Off[1] driven by constant 1
+WARNING: [Synth 8-3917] design vga_top has port Anode_Off[0] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1611.668 ; gain = 562.715
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1613.527 ; gain = 563.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1611.668 ; gain = 562.715
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1613.527 ; gain = 563.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1611.668 ; gain = 562.715
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1613.527 ; gain = 563.246
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1611.668 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1613.527 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_top_propImpl.xdc].
+Parsing XDC File [X:/311proj/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [X:/311proj/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [X:/311proj/ec311project/ec311project.srcs/constrs_1/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/vga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1709.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1713.441 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1709.574 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1713.441 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'gameOver_reg' [C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.srcs/sources_1/new/vga_top.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'gameOver_reg' [X:/311proj/ec311project/ec311project.srcs/sources_1/new/vga_top.v:46]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -180,27 +185,30 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design vga_top has port Anode_Off[3] driven by constant 1
+WARNING: [Synth 8-3917] design vga_top has port Anode_Off[2] driven by constant 1
+WARNING: [Synth 8-3917] design vga_top has port Anode_Off[1] driven by constant 1
+WARNING: [Synth 8-3917] design vga_top has port Anode_Off[0] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-565] redefining clock 'sys_clk_pin'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -218,37 +226,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -268,40 +276,41 @@ Report Cell Usage:
 |2     |CARRY4 |    73|
 |3     |LUT1   |    13|
 |4     |LUT2   |   103|
-|5     |LUT3   |    83|
-|6     |LUT4   |    81|
-|7     |LUT5   |   108|
-|8     |LUT6   |   135|
+|5     |LUT3   |    81|
+|6     |LUT4   |    88|
+|7     |LUT5   |   115|
+|8     |LUT6   |   132|
 |9     |FDCE   |    34|
 |10    |FDRE   |    95|
 |11    |FDSE   |    14|
 |12    |LDC    |     1|
 |13    |IBUF   |     6|
-|14    |OBUF   |    25|
+|14    |OBUF   |    29|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1713.441 ; gain = 663.160
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1709.574 ; gain = 562.715
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1709.574 ; gain = 660.621
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:33 . Memory (MB): peak = 1713.441 ; gain = 563.246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 1713.441 ; gain = 663.160
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1709.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1713.441 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1709.574 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1713.441 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   LDC => LDCE: 1 instance 
 
-Synth Design complete | Checksum: a79fdfc4
+Synth Design complete | Checksum: 3a7c867f
 INFO: [Common 17-83] Releasing license: Synthesis
-40 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+40 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1709.574 ; gain = 1075.777
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1709.574 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/jsorkin/EC311/311oopsie/ec311project/ec311project.runs/synth_1/vga_top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 1713.441 ; gain = 1080.352
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1713.441 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'X:/311proj/ec311project/ec311project.runs/synth_1/vga_top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1713.441 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_utilization -file vga_top_utilization_synth.rpt -pb vga_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 13:46:15 2024...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  7 20:05:57 2024...
