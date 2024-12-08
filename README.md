@@ -1,5 +1,4 @@
 # ec311project
-We will be recreating Pong using Verilog programming to the VGA as our Fall 2024 EC311 final project.
 
 ## Project Name
 Pong on VGA/FPGA
@@ -8,8 +7,10 @@ Pong on VGA/FPGA
 Hannah Tandang, Jiaxing Wang, Jianzheng Ruan, Joseph Sorkin
 
 ## Demo Video Link
+https://www.youtube.com/watch?v=c240JOul-l0
 
 ## Overview of Project
+We will be recreating Pong using Verilog programming to the VGA as our Fall 2024 EC311 final project. It is a two player pong game where players can control the paddles motion by using the switches on an FPGA board to deflect the ball off. Any missed collision with the paddle is a score for the opposing player. The score is displayed on a 7 segment display on the FPGA. The game also contains two buttons "reset" and "start".
 
 ## How to Run Project
 1. Download the source code as a .zip file and unzip the compressed folder. 
