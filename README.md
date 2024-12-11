@@ -27,4 +27,3 @@ The following describes the code structure of several relevant main modules:
 - paddle.v: This paddle module is instantiated twice to create two different paddle objects. Each paddle will be initialized to have a velocity of 2 and an initial y-position of 240 (middle height). Whenever the switch input is up, the paddle position increases by the given velocity (2). When the switch input is down, the paddle decreases by the given velocity.
 - game_clk_divider.v:
 - clk_divider.v:
-- circle.v:
